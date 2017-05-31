@@ -1,0 +1,38 @@
+hu?ng d?n upload flie(bucket/folder/file) lên amazon
+
+B1: T?o user m?i
+-L?y 2 key ch?ng th?c copy vào project
+-T?i key ch?ng th?c v? d? d? phòng
+
+B2: T?o Server EC2
+-? dây mình ch?n 1 server free nên các b?n c? next khi c?u hình
+-? bu?c này EC2 yêu c?u t?o key cho server n?u chua có và t?i v? d? ti?p t?c. Key có duôi .pem
+-Ð?i cho server m?i t?o running. Ðã xong
+
+B3: T?o web app trên Elastics
+-? dây ta t?o export project ra file war d? t?i lên
+-Ð?i cho file war t?i lên ...
+-Cu?i cùng cung xong ...
+-C?u hình
+-Vì bài có s? d?ng database nên s? c?u hình lun
+-password ph?i có ít nh?t 8 ký t?
+-Ti?p t?c ch? d? t?o ...
+-Khi xong s? t? chuy?n sang trang nhu hình
+-Ki?m tra ch?y ?n d?nh
+
+B4: C?u hình database RDS
+-? d?y mình dùng ph?n m?m AppServ d? c?u hình cho database MySQL. Các b?n có th? t?i nhu sau
+-Nh?p password dã t?o ? bu?c t?o web app
+-N?u g?p l?i này thì các b?n s?a nhu sau
+-Thêm HTTP và MySQL/Author v?i l?a ch?n Anywhere
+-Ðã nh?n du?c thông báo thành công
+
+B5:T?o CSDL
+-Ðã t?o xong
+-Ki?m tra table v?a t?o. Ðã xong
+
+B6: Thay link RDS cho d?a ch? csdl trong project
+-Sau khi thêm, luu l?i và export ra file war
+-Update file war cho web app
+-Ch? deloy file war lên web app ... Ðã xong
+-Ki?m tra trang web

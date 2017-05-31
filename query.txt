@@ -1,0 +1,9 @@
+show databases;
+create database upload;
+use upload;
+CREATE TABLE `post` (  `id` int(11) NOT NULL AUTO_INCREMENT,  
+`title` varchar(300) DEFAULT NULL,  `content` longtext,  
+`file` longtext,  PRIMARY KEY (`id`)) 
+ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+describe post;
+select * from post;
